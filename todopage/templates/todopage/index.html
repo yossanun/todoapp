@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo App</title>
+        <link rel="stylesheet" type='text/css' href="{% static 'css/todo.css'%}">
+    </head>
+    <body>
+        <div class="header" id="header" >     
+            <form id="form">
+                <h2 >To Do List</h2>
+                <input type="text" name='todo' id='title' placeholder="Add new todo" >          
+                <input type="submit" class="addBtn" value="Add">
+            </form>
+        </div>
+        <div id="todo-list">
+                
+            </div>
+        </div>
+    </body>
+</html>
+<script src="{% static 'js/todo.js'%}"></script>
+
